@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beyond Human: CSS Grid Layout Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+  <style>
+    :root {
+      --white: #ffffff;
+      --black: #000000;
+    }
+
+    body {
+      background-color: var(--white);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .main-container {
+      max-width: 72em;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .banner {
+      background-color: #25deeb;
+      color: var(--black);
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .banner-title {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .banner-subtitle {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .team-member-card {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+      align-items: flex-start;
+    }
+
+    .team-member-card-image {
+      width: 30%;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+
+    .team-member-card-blurb {
+      width: 70%;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .our-clients-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 60px 0 20px;
+      text-align: center;
+    }
+
+    .client-icon-container {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .client-icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+
+    /* Font size utility classes */
+    .small-text {
+      font-size: 14px;
+    }
+
+    .medium-text {
+      font-size: 20px;
+    }
+
+    .large-text {
+      font-size: 32px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="banner" id="banner">
+      <div class="banner-title">Beyond Human:</div>
+      <div class="banner-subtitle">The Current World We Live In</div>
+    </div>
+
+    <div class="team-member-card" id="teamMemberCard1">
+      <img class="team-member-card-image" src="https://cdn.openart.ai/uploads/image_TrvKEclY_1755473882104_raw.jpg" />
+      <div class="team-member-card-blurb">
+        <p>When the future comes, there are going to be opportunities for scientists and people who have the thoughts and power to create powerful tools that will help mankind become stronger and better during everyday life. These tools may even help us live longer.</p>
+        <p>This could include new prosthetics with enhanced power and robotic components, drinks that promote youthfulness as we age, and machines that support longer, healthier lives for older individuals.</p>
+        <p>The world is already starting to create futuristic things such as flyingcars, hoverboards, etc. This only means that the futuristic technological reviolution is closer than we would think.</p>
+      <p>The future is unknown but open to creative interpretation. While the chances of these innovations emerging in our lifetime may be slim, some individuals are already studying these possibilities to begin the process.</p>
+    </div>
+    </div>
+
+    <div class="team-member-card" id="teamMemberCard2">
+      <img class="team-member-card-image" src="https://cdn.openart.ai/uploads/image_QXn92BVn_1755473637731_raw.jpg" />
+      <div class="team-member-card-blurb">
+       <p>Below are some of the inventions that may be part of our near future—technologies that could make us more than human.</p>
+       <p>Some downsides to these human enhancements include reduced job opportunities in fields like nursing and healthcare.</p>
+        <p>As our bodies become adjusted and programmed to resist illness and aging, the need for caretakers may diminish—changing the landscape of human services and support.</p>
+        <p>Below are some of the written ideas that I believe are likely to be created:</p>
+          <p>1. Body suits: These could help regulate the human bodies body temperaturte and blood flow while also keeping the body fit and healthy.</p>
+    </div>
+    </div>
+
+    <div class="team-member-card" id="teamMemberCard3">
+      <img class="team-member-card-image" src="https://cdn.openart.ai/uploads/image_izgonVaQ_1755484593087_raw.jpg" />
+      <div class="team-member-card-blurb">
+        <p>2. Robots: These robots could help humans do chores around the house or even other activities such as peoples hobbies.</p>
+        <p>3. Glasses: These glasses would give some information on people when you ask them to, such as the ones in movies.</p>
+        <p>4. Machines: These could attach to the human body, either as an extra arm or to also help wwith things such as helping the person live longer.</p>
+        <p>5. Sleeping pods: These would help regulate peoples sleeping and what their body does when asleep. It could also help with purifying the air while inside.</p>
+        <p>6. Prosthetic body parts: This is something that already exists, however they will probably become more tech savy.</p>
+      </div>
+    </div>
+
+    <div class="our-clients-title" id="ourClientsTitle">What the World Will Look Like Once We Are Beyond Human</div>
+
+    <div class="client-icon-container" id="clientIcon1"><img class="client-icon" src="https://cdn.openart.ai/uploads/image_OvkOFjQg_1755406357623_raw.jpg" /></div>
+    <div class="client-icon-container" id="clientIcon2"><img class="client-icon" src="https://cdn.openart.ai/uploads/image_75rNRPib_1755407072072_raw.jpg" /></div>
+    <div class="client-icon-container" id="clientIcon3"><img class="client-icon" src="https://cdn.openart.ai/uploads/image_Qw1GVfuj_1755407350533_raw.jpg" /></div>
+    <div class="client-icon-container" id="clientIcon4"><img class="client-icon" src="https://cdn.openart.ai/uploads/image_7NcrH7nU_1755406915811_raw.jpg" /></div>
+    <div class="client-icon-container" id="clientIcon5"><img class="client-icon" src="https://cdn.openart.ai/uploads/image_fAiMiXP3_1755406708444_raw.jpg" /></div>
+    <div class="client-icon-container" id="clientIcon6"><img class="client-icon" src="https://cdn.openart.ai/uploads/image_0Yl_palT_1755407012561_raw.jpg" /></div>
+    <div class="client-icon-container" id="clientIcon7"><img class="client-icon" src="https://cdn.openart.ai/uploads/image_l2D_o5fH_1755405919986_raw.jpg" /></div>
+    <div class="client-icon-container" id="clientIcon8"><img class="client-icon" src="https://cdn.openart.ai/uploads/image_Frez2Wql_1755407195385_raw.jpg" /></div>
+  </div>
+
+    <div class="our-clients-title" id="ourClientsTitle">Click on the images to take a closer look!</div>
+    
+  <!-- Modal Structure -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<style>
+  .modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.85);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 12px;
+  box-shadow: 0 0 30px #000;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const closeBtn = document.querySelector(".close");
+
+    // Target both client icons and team member images
+    const clickableImages = document.querySelectorAll(".client-icon, .team-member-card-image");
+
+    clickableImages.forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    window.addEventListener("click", event => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
+</script>
+</body>
+</html>
